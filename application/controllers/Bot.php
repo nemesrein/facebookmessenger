@@ -29,7 +29,7 @@ class Bot extends CI_Controller
         $url = 'https://graph.facebook.com/v2.9/me/messages?access_token=' . $access_token;
 
         if ($clientmessage == "hi") {
-            $message_to_reply = 'hello';
+            $message_to_reply = 'hello {{user_first_name}}';
         } else {
             $message_to_reply = 'Huh! what do you mean?';
         }
